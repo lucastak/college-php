@@ -1,0 +1,4 @@
+1) Modifique a listagem de produtos para informar:
+a) O menor preço e o maior preço
+b) O inventário do estoque total.
+   -> soma das multiplicações das quantidades pelos preços
