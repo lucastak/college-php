@@ -4,12 +4,12 @@ require_once 'ItemVenda.php';
 require_once 'Produto.php';
 
 class Venda {
-    private $produtos_disponiveis = [];
+    private $produtos = [];
     private $itens = [];
     private $finalizada = false;
 
     public function __construct($produtos) {
-        $this->produtos_disponiveis = $produtos;
+        $this->produtos = $produtos;
     }
 
     public function adicionarItem($idProduto, $quantidade) {
@@ -19,7 +19,7 @@ class Venda {
 
         $produtoEncontrado = null;
         
-        foreach ($this->produtos_disponiveis as $produto) {
+        foreach ($this->produtos as $produto) {
             if ($produto->id === $idProduto) {
                 $produtoEncontrado = $produto;
                 break;
@@ -37,7 +37,7 @@ class Venda {
         }
 
         if (isset($this->itens[$posicao])) {
-            splice($this->itens, $posicao, 1);
+            array_splice($this->itens, $posicao, 1);
         }
     }
 

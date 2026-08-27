@@ -38,7 +38,6 @@ $produtos = carregarProdutos();
 
 
 //EX1: crie uma função calcularInventario ue receba um array de produtos
-// e calcule o inventario totla dos produtos (soma dos inventarios)
 
 function calcularInventarioTotal(array $produtos) {
     $total = 0;
@@ -51,24 +50,26 @@ function calcularInventarioTotal(array $produtos) {
 
 echo calcularInventarioTotal( $produtos ) . "\n";
 
-// EX2: Testando o Modelo de Classes Venda e ItemVenda
+// EX2:
 require_once 'Venda.php';
 require_once 'ItemVenda.php';
 
 $venda = new Venda($produtos);
-$venda->adicionarItem(1, 2); // 2 celulares
-$venda->adicionarItem(2, 1); // 1 tablet
-$venda->adicionarItem(3, 4); // 4 fones de ouvido
+$venda->adicionarItem(1, 1);
+$venda->adicionarItem(2, 1);
+$venda->adicionarItem(3, 1);
 
-echo "\n--- Teste Exercicio 2 ---";
+//EX3
+
+echo "\nTeste Exercicio 2";
 echo "\nItens na venda: " . count($venda->getItens());
 echo "\nSubtotal da Venda: R$ " . number_format($venda->subTotal(), 2, ',', '.') . "\n";
 
-echo "\n--- Teste Exercicio 3 ---";
-$estoqueAntes = $produtos[0]->estoque; // id 1
+echo "\nTeste Exercicio 3";
+$estoqueAntes = $produtos[0]->estoque;
 echo "\nEstoque do celular ANTES de finalizar a venda: " . $estoqueAntes;
 $venda->finalizar();
 echo "\nEstoque do celular DEPOIS de finalizar a venda: " . $produtos[0]->estoque;
 
-$venda->adicionarItem(1, 5); // não deve adicionar
+$venda->adicionarItem(1, 5);
 echo "\nTentou adicionar itens com a venda finalizada. Total de itens continua: " . count($venda->getItens()) . "\n";
