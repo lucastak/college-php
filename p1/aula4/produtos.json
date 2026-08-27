@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "descricao": "celular",
+        "preco": 1700,
+        "estoque": 10
+    },
+    {
+        "id": 2,
+        "descricao": "tablet",
+        "preco": 2500,
+        "estoque": 20
+    },
+    {
+        "id": 3,
+        "descricao": "fone de ouvido",
+        "preco": 121.5,
+        "estoque": 30
+    }
+]
