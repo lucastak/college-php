@@ -20,6 +20,6 @@ class ItemVenda {
     }
 
     public function subTotal() {
-        return $this->produto->preco * $this->quantidade;
+        return $this->produto->preco * $this->quantidade();
     }
 }

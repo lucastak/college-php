@@ -1,0 +1,39 @@
+EXERCÍCIOS:
+
+1) CRIE UMA FUNÇÃO calcularInventario que receba um array de produtos
+e calcule o inventário total dos produtos (soma dos inventários).
+
+2) Crie o modelo de classes abaixo, adicionando atributos e métodos
+necessários:
+
++--------------------------------------------------+          +--------------------+
+| Venda                                            |          | ItemVenda          |
++--------------------------------------------------+          +--------------------+
+| construtor( produtos: Produto[] )                |--------->| subtotal(): float  |
+| adicionarItem( idProduto: int, quantidade: int ) |       *  | produto(): Produto |
+| removerItem( posicao: int )                      |          +--------------------+
+| subtotal(): float                                |
++--------------------------------------------------+
+
+3) Crie um método finalizar() em Venda que debite do estoque dos produtos as
+quantidades vendidas. Após finalizar a venda, ela não deve mais aceitar
+adicionar ou remover itens.
+
+4) Crie uma interface ImpressoraVenda, com um método imprimir(v: Venda).
+
+5) Modifique o método finalizar(), de Venda, para receber uma
+   instância de ImpressoraVenda que, se não for null, deve ser
+   utilizada para imprimir a venda finalizada.
+
+6) Crie uma implementação da ImpressoraVenda para imprimir no console
+   os detalhes de todos os itens da venda e o subtotal.
+
+7)
+a) Crie um método para conceder um desconto, em percentual, à venda.
+   Por exemplo, concederDesconto( 10 ), deve dar 10% de desconto.
+
+b) Em seguida, crie um método total() que retorne o total final da
+   venda, considerando o desconto concedido;
+
+c) Modifique o exercício (6) para imprimir tanto o desconto concedido
+   (6a) quanto o total final (6b).

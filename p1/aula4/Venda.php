@@ -2,11 +2,13 @@
 
 require_once 'ItemVenda.php';
 require_once 'Produto.php';
+require_once 'ImpressoraVenda.php';
 
-class Venda {
+class Venda implements ImpressoraVenda {
     private $produtos = [];
     private $itens = [];
     private $finalizada = false;
+    private $desconto = 0;
 
     public function __construct($produtos) {
         $this->produtos = $produtos;
@@ -38,7 +40,20 @@ class Venda {
 
         if (isset($this->itens[$posicao])) {
             array_splice($this->itens, $posicao, 1);
+            //$this->itens = array_values($this->itens);
         }
+    }
+
+    public function concederDesconto($percentual) {
+        if ($this->finalizada) {
+            return;
+        }
+        
+        $this->desconto = $percentual;
+    }
+
+    public function total() {
+        return $this->subTotal() - ($this->subTotal() * $this->desconto / 100);
     }
 
     public function finalizar() {
@@ -52,6 +67,11 @@ class Venda {
         }
 
         $this->finalizada = true;
+        $this->mprimir($this);
+    }
+
+    public function imprimir(Venda $v) {
+        echo "Subtotal: " . $v->subTotal() . "\n";
     }
 
     public function subTotal() {
