@@ -1,0 +1,27 @@
+EXERCÍCIOS
+
+1) Crie uma exceção TarefaException no namespace cefet\excecoes e
+a utilize para validar a tarefa, no construtor, chamando um método validar.
+Nesse método, basta verificar se o comprimento da descrição está entre 3 e 50.
+DICA: Use require_once antes do use. Ambos são necessários.
+
+2) Crie um trait ConversivelParaJson, que contenha um método
+   toJson() capaz de retornar os dados do objeto como uma string
+   no formato Json. A classe deve estar no namespace cefet.
+
+b) Use o trait criado na classe Tarefa.
+
+HOMEWORK
+
+3) Crie uma interface que represente um local em que as tarefas podem ser salvas.
+   Essa interface pode ser métodos como adicionar(), que recebe uma Tarefa, e
+   obterTodas() que obtém todas as tarefas.
+   Crie essa interface no namespace cefet\persistencia.
+
+4) a) Crie uma implementação da interface anterior, que manipule Tarefas em um
+   arquivo com a extensão JSON, tal como "tarefas.json". Crie essa classe
+   no mesmo namespace da interface.
+
+b) Crie uma exceção RepositorioException, no mesmo namespace, para representar
+   exceções ocorridas ao realizar a persistência das tarefas, tal como haver um
+   erro ao abrir o arquivo.

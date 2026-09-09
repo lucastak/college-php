@@ -1,0 +1,14 @@
+[
+    {
+        "descricao": "Estudar para a prova de PHP",
+        "feita": false
+    },
+    {
+        "descricao": "Finalizar exercícios da Aula 5",
+        "feita": true
+    },
+    {
+        "descricao": "Revisar orientação a objetos",
+        "feita": false
+    }
+]

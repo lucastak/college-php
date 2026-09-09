@@ -1,10 +1,3 @@
 <?php
 
-namespace cefet\excecoes;
-
-class TarefaExcecao extends \Exception{
-    public function __construct($message)
-    {
-        parent::__construct($message);
-    }
-}
+require_once __DIR__ . '/TarefaException.php';
