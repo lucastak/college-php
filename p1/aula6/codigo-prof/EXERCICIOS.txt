@@ -1,0 +1,9 @@
+- Crie um arquivo remocao.php que solicite o id de um serviço
+  e remova-o. Informe se o registro foi encontrado para remoção
+  ou não.
+
+- Crie um alterar.php que solicite o id de um serviço, mostre-o
+  na tela - ou exiba não encontrado. Se for encontrado, solicite
+  seus dados (descrição e valor), então atualize o serviço para
+  que tenha os novos dados.
+
