@@ -29,7 +29,7 @@ function carregarProdutos() {
 
     foreach( $array as $a ) {
         $p = Produto::criar($a);
-        array_push($produtos, $p);
+        $produtos[] = $p;
     }
     return $produtos;
 }

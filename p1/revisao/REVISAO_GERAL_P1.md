@@ -110,8 +110,8 @@ function calcularMedia(array $numeros): float {
   1. **Ler:** `file_get_contents($caminho)` + `json_decode($conteudo, true)`.
   2. **Buscar:** Percorrer e comparar `$item['id'] === $id`.
   3. **Adicionar:** `$lista[] = $novoElemento`.
-  4. **Remover:** `unset($lista[$indice])` seguido de `$lista = array_values($lista)` (para reindexar de 0 a N).
-  5. **Salvar:** `json_encode($lista, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)` + `file_put_contents($caminho, $json)`.
+  4. **Remover:** `unset($lista[$indice])` seguido de `$lista = array_values($lista)` (para reindexar de 0 a N) | ou usar a função `array_splice($lista, $indice, 1)`.
+  5. **Salvar:** `json_encode($lista)` + `file_put_contents($caminho, $json)`.
 
 ---
 
