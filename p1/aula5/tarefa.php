@@ -42,4 +42,29 @@ class Tarefa {
             throw new TarefaException("A descrição deve ter entre 3 e 50 caracteres. Fornecido: {$tamanhoDescricao}");
         }
     }
+
+    // Abordagem 2: Tabela / Array de Regras (sem múltiplos if)
+    private function validar2() {
+        $tamanho = mb_strlen(trim($this->descricao));
+
+        $regras = [
+            "A descrição não pode ser vazia."
+                => empty(trim($this->descricao)),
+
+            "A descrição deve ter entre 3 e 50 caracteres. Fornecido: {$tamanho}"
+                => $tamanho < 3 || $tamanho > 50,
+
+            "O campo 'feita' deve ser um booleano."
+                => !is_bool($this->feita),
+
+            "Descrição deve ser string"
+                => !is_string($this->descricao),
+        ];
+
+        foreach ($regras as $mensagem => $invalido) {
+            if ($invalido) {
+                throw new TarefaException($mensagem);
+            }
+        }
+    }
 }

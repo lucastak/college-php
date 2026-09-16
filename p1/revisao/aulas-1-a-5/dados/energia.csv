@@ -1,0 +1,6 @@
+UnidadeConsumidora;BandeiraTarifaria;ConsumoKwh;PrecoKwh
+UC-1001;Verde;220;0.75
+UC-1002;Vermelha;480;0.92
+UC-1003;Amarela;310;0.82
+UC-1004;Vermelha;620;0.95
+UC-1005;Verde;180;0.75

@@ -38,6 +38,7 @@ class Venda implements ImpressoraVenda {
             return;
         }
 
+
         if (isset($this->itens[$posicao])) {
             array_splice($this->itens, $posicao, 1);
             //$this->itens = array_values($this->itens);
@@ -67,7 +68,7 @@ class Venda implements ImpressoraVenda {
         }
 
         $this->finalizada = true;
-        $this->mprimir($this);
+        $this->imprimir($this);
     }
 
     public function imprimir(Venda $v) {

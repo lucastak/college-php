@@ -8,6 +8,8 @@ function remover( &$produtos ) {
 
     if ( $indiceEncontrado != INDICE_NAO_ENCONTRADO ) {
         unset( $produtos[ $indiceEncontrado ] );
+        //outro meio
+        //array_splice( $produtos, $indiceEncontrado, 1 );
         echo "Removido com sucesso.\n";
     } else {
         echo "Não encontrado.\n";

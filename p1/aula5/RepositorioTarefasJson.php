@@ -53,7 +53,7 @@ class RepositorioTarefasJson implements RepositorioTarefas {
         foreach ($dados as $item) {
             if (is_array($item) && isset($item['descricao'])) {
                 $feita = isset($item['feita']) ? (bool)$item['feita'] : false;
-                $listaTarefas[] = new Tarefa($item['descricao'], $feita);
+                $listaTarefas [] = new Tarefa($item['descricao'], $feita);
             }
         }
 

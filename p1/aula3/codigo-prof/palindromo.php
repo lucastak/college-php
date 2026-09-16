@@ -8,7 +8,7 @@
 
 $frase = readline( 'Frase: ' );
 // $palavras = explode( ' ', $frase );
-// $unida = implode( '', $palavras ); // oloboamaobolo
+// $unida = implode( '', $palavras ); // o lobo ama o bolo
 $unida = str_replace( ' ', '', $frase );
 
 $tamanho = mb_strlen( $unida );

@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "titulo": "Interestelar",
+    "genero": "Ficção Científica",
+    "ano": 2014,
+    "nota": 8.7
+  },
+  {
+    "id": 2,
+    "titulo": "O Poderoso Chefão",
+    "genero": "Drama",
+    "ano": 1972,
+    "nota": 9.2
+  },
+  {
+    "id": 3,
+    "titulo": "A Viagem de Chihiro",
+    "genero": "Animação",
+    "ano": 2001,
+    "nota": 8.6
+  },
+  {
+    "id": 4,
+    "titulo": "Matrix",
+    "genero": "Ficção Científica",
+    "ano": 1999,
+    "nota": 8.7
+  },
+  {
+    "id": 5,
+    "titulo": "Parasita",
+    "genero": "Suspense",
+    "ano": 2019,
+    "nota": 8.5
+  }
+]

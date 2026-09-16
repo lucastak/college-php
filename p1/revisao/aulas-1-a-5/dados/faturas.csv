@@ -1,0 +1,6 @@
+NumeroFatura;Cliente;DataVencimento;ValorOriginal;Status
+FAT-2024-01;Supermercado Alvorada;15/05/2024; R$ 4.250,80 ;Pago
+FAT-2024-02;Farmácia Vida & Saúde;18/05/2024; R$ 1.890,20 ;Pendente
+FAT-2024-03;Livraria Dom Casmurro;20/05/2024; R$ 850,00 ;Pago
+FAT-2024-04;Restaurante Sabor da Serra;25/05/2024; R$ 5.120,50 ;Pendente
+FAT-2024-05;Auto Peças Estrela;30/05/2024; R$ 2.400,00 ;Pago
