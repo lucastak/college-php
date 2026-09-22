@@ -1,3 +1,0 @@
-- Rever execução de Exceptions
-- Classe sem herança
-- ACID
