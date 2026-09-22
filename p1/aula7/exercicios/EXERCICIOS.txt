@@ -1,0 +1,5 @@
+- Crie um script que solicite do usuario um valor
+ minimo R$ de preço dos servicos 
+ e atualize todos iguais ou acima desse preço 
+ em 10%. Utilize  transação e imprima quantos 
+ registros foram atualizados

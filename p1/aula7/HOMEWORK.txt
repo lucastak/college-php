@@ -1,0 +1,9 @@
+HOMEWORK
+
+1) Crie uma listagem de todas as empresas e quantos serviços cada
+   uma oferece. A listagem deve ter o "id" e o "nome" da empresa e
+   a quantidade de serviços que cada uma oferece.
+
+2) Crie um cadastro de empresa, em que seja possível indicar os serviços
+   por ela oferecidos, associando a empresa aos serviços existentes escolhidos.
+
